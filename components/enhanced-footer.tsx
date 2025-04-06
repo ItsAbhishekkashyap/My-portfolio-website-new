@@ -106,7 +106,7 @@ export default function EnhancedFooter() {
                 />
                 <SocialButton
                   icon={<Linkedin className="h-5 w-5" />}
-                  url="www.linkedin.com/in/abhishek-gond-054884256"
+                  url="https://www.linkedin.com/in/abhishek-gond-054884256"
                   label="LinkedIn"
                 />
                 {/* <SocialButton icon={<Twitter className="h-5 w-5" />} url="https://twitter.com" label="Twitter" /> */}

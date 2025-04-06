@@ -101,13 +101,13 @@ export default function AboutSection() {
 
             <StaggerItem>
 
-              <Button  onClick={handleDownload} className="gap-2 group shadow-lg hover:shadow-primary/20 transition-all duration-300">
-                <Download  className="h-4 w-4 group-hover:animate-bounce" />
+              <Button onClick={handleDownload} className="gap-2 group shadow-lg hover:shadow-primary/20 transition-all duration-300">
+                <Download className="h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
               <Button variant="outline" className="ml-3 gap-2 group" asChild>
                 <a
-                  href="www.linkedin.com/in/abhishek-gond-054884256"
+                  href="https://www.linkedin.com/in/abhishek-gond-054884256"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -115,7 +115,8 @@ export default function AboutSection() {
                   <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
-              
+
+
             </StaggerItem>
 
             <StaggerItem>

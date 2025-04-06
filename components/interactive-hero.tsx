@@ -161,7 +161,7 @@ export default function InteractiveHero() {
             className="flex gap-4 justify-center"
           >
             <SocialButton icon={<Github className="h-5 w-5" />} url="https://github.com/ItsAbhishekkashyap" label="GitHub" />
-            <SocialButton icon={<Linkedin className="h-5 w-5" />} url="www.linkedin.com/in/abhishek-gond-054884256" label="LinkedIn" />
+            <SocialButton icon={<Linkedin className="h-5 w-5" />} url="https://www.linkedin.com/in/abhishek-gond-054884256" label="LinkedIn" />
           </motion.div>
         </div>
 

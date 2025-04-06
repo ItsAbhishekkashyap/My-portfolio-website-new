@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="flex gap-4">
           {[
             { icon: Github, href: "https://github.com/ItsAbhishekkashyap" },
-            { icon: Linkedin, href: "www.linkedin.com/in/abhishek-gond-054884256" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/abhishek-gond-054884256" },
             { icon: Mail, href: "mailto:abhi47025@gmail.com" },
           ].map((social, index) => (
             <Button key={index} variant="ghost" size="icon" className="hover:bg-accent/10" asChild>

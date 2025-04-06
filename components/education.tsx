@@ -170,7 +170,7 @@ export default function Education() {
             <span>📅 2023 - 2027</span>
           </div>
           <div className="text-muted-foreground text-sm">📍 Lucknow, India</div>
-          <div className="text-muted-foreground text-sm">📘 YGPA: 8.53 (First Year)</div>
+          <div className="text-muted-foreground text-sm">📘 YGPA: 8.64 (First Year)</div>
           <p className="text-muted-foreground text-sm mt-2">
             📚 <span className="font-medium">Relevant Coursework:</span> Digital Electronics, Signal Systems, Programming in C/C++, Data Structures and Algorithms, Web Development, Engineering Mathematics.
           </p>

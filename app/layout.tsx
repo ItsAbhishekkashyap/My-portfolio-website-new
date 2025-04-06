@@ -13,10 +13,13 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Abhishek Gond | Electronics and Communication Engineer",
+  title: "Abhishek Gond ",
   description:
     "Portfolio of Abhishek Gond, Electronics and Communication Engineer",
-    generator: 'v0.dev'
+    generator: 'v0.dev',
+    icons: {
+      icon: '/grad.svg', // or '/favicon.png'
+    },
 }
 
 export default function RootLayout({

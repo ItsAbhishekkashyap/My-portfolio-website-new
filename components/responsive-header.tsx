@@ -27,11 +27,11 @@ export default function ResponsiveHeader() {
   }, [])
 
   const navItems = [
-    { name: "Home", href: "#" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   // If not mounted yet, render a simpler version to avoid hydration issues

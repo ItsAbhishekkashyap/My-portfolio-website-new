@@ -45,22 +45,7 @@ export default function ContactForm() {
   })
 
   // Handle form submission
-  // function onSubmit(values: z.infer<typeof formSchema>) {
-  //   setIsSubmitting(true)
-
-  //   // Simulate API call
-  //   setTimeout(() => {
-  //     console.log(values)
-  //     setIsSubmitting(false)
-  //     setIsSubmitted(true)
-
-  //     toast({
-  //       title: "Message sent!",
-  //       description: "Thank you for your message. I'll get back to you soon.",
-  //     })
-  //   }, 1500)
-  // }
-
+  
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
   
@@ -92,7 +77,7 @@ export default function ContactForm() {
   
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 p-8">
+    <div id="contact" className="grid md:grid-cols-2 gap-8 p-8">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}

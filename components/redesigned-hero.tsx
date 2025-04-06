@@ -202,7 +202,7 @@ export default function RedesignedHero() {
                 className="rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110"
               >
                 <a
-                  href="www.linkedin.com/in/abhishek-gond-054884256"
+                  href="https://www.linkedin.com/in/abhishek-gond-054884256"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"

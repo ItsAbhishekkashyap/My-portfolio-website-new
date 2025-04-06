@@ -107,7 +107,7 @@ export default function AboutSection() {
               </Button>
               <Button variant="outline" className="ml-3 gap-2 group" asChild>
                 <a
-                  href="www.linkedin.com/in/abhishek-gond-054884256"
+                  href="https://www.linkedin.com/in/abhishek-gond-054884256/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

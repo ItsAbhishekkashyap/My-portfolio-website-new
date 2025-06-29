@@ -6,6 +6,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import ResponsiveHeader from "@/components/responsive-header"
 import ClientDiagnosticWrapper from "@/components/client-diagnostic-wrapper"
+import dynamic from "next/dynamic"
+
+// ✅ Dynamically import Chatbot to avoid SSR issues during build
+const Chatbot = dynamic(() => import("@/components/chatbot"), { ssr: false })
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,13 +17,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Abhishek Gond ",
-  description:
-    "Portfolio of Abhishek Gond, Electronics and Communication Engineer",
-    generator: 'v0.dev',
-    icons: {
-      icon: '/grad.svg', // or '/favicon.png'
-    },
+  title: "Abhishek Gond",
+  description: "Portfolio of Abhishek Gond, Electronics and Communication Engineer",
+  generator: "v0.dev",
+  icons: {
+    icon: "/grad.svg", // or '/favicon.png'
+  },
 }
 
 export default function RootLayout({
@@ -34,11 +37,7 @@ export default function RootLayout({
         <link rel="preload" href="/placeholder.svg?height=400&width=400" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-
-        {/* Add preload hints for critical JavaScript */}
         <link rel="preload" href="/_next/static/chunks/framework.js" as="script" />
-
-        {/* Add meta tags for better performance */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       </head>
@@ -48,13 +47,9 @@ export default function RootLayout({
           {children}
           <Toaster />
           <ClientDiagnosticWrapper />
-          <Chatbot />
+          <Chatbot /> {/* ✅ Safe to use now */}
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
-
-
-import './globals.css'

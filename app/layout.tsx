@@ -44,7 +44,7 @@ export default function RootLayout({
           {children}
           <Toaster />
           <ClientDiagnosticWrapper />
-          <ChatbotWrapper />{/* ✅ Safe to use now */}
+          <ChatbotWrapper />
         </ThemeProvider>
       </body>
     </html>

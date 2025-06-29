@@ -105,13 +105,23 @@ export default function AboutSection() {
                 <Download className="h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
-              <Button variant="outline" className="ml-3 gap-2 group" asChild>
+              <Button variant="outline" className="ml-3 hover:bg-blue-700 gap-2 group" asChild>
                 <a
                   href="https://www.linkedin.com/in/abhishek-gond-054884256"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span>View LinkedIn</span>
+                  <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
+              <Button variant="outline" className="ml-3  hover:bg-green-700 gap-2 group" asChild>
+                <a
+                  href="https://www.fiverr.com/s/kLjBgzL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>View Fiverr</span>
                   <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
@@ -132,7 +142,7 @@ export default function AboutSection() {
                       <div className="flex items-center gap-1">
                         <Award className="h-5 w-5 text-primary" />
                         <div>
-                          <div className="text-sm font-medium">Experience</div>
+                          <div className="text-sm font-medium">Experience in project</div>
                           <div className="text-2xl font-bold">2+ Years</div>
                         </div>
                       </div>

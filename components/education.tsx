@@ -210,7 +210,7 @@ export default function Education() {
                 <AchievementItem
                   icon={<Code2 className="h-5 w-5 text-green-500" />}
                   title="Full-Stack Projects"
-                  description="Built projects using MERN, Next.js, Tailwind, Firebase, and Express.js."
+                  description="Built projects using Next.js(Frontend + Backend), Tailwind CSS, TypeScript and mongodb"
                 />
                 <AchievementItem
                   icon={<Brain className="h-5 w-5 text-pink-500" />}

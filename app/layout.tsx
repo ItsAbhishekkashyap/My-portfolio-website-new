@@ -6,10 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import ResponsiveHeader from "@/components/responsive-header"
 import ClientDiagnosticWrapper from "@/components/client-diagnostic-wrapper"
-import dynamic from "next/dynamic"
-
-// ✅ Dynamically import Chatbot to avoid SSR issues during build
-const Chatbot = dynamic(() => import("@/components/chatbot"), { ssr: false })
+import ChatbotWrapper from "@/components/chatbot-wrapper"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -47,7 +44,7 @@ export default function RootLayout({
           {children}
           <Toaster />
           <ClientDiagnosticWrapper />
-          <Chatbot /> {/* ✅ Safe to use now */}
+          <ChatbotWrapper />{/* ✅ Safe to use now */}
         </ThemeProvider>
       </body>
     </html>

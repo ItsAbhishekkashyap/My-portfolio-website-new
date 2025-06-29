@@ -347,7 +347,7 @@ export default function RedesignedProjects() {
                   exit={{ x: direction > 0 ? -1000 : 1000, opacity: 0, transition: { x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } } }}
                   className="relative w-full aspect-[16/10] sm:aspect-[16/9]"
                 >
-                  <div className="absolute inset-0 flex flex-col overflow-scroll md:flex-row">
+                  <div className="absolute inset-0 flex flex-col  overflow-y-auto md:flex-row">
                     <div className="relative w-full h-52 md:h-auto sm:h-64  md:w-1/2">
                       <Image
                         src={featuredProjects[currentFeaturedIndex].imageUrl || "/placeholder.svg"}

@@ -53,67 +53,67 @@ const projects = [
 
 
   {
-  id: 1,
-  title: "Branqly — Smart Link Management SaaS",
-  category: "web",
-  description:
-    "A full-featured SaaS platform to shorten, brand, analyze, and manage smart links with advanced analytics and custom domains.",
-  longDescription:
-    "Branqly is a production-ready SaaS web application that empowers creators, marketers, and businesses to manage their links like pros. Built with Next.js, Tailwind CSS, and MongoDB, Branqly offers branded URL shortening, detailed analytics (device, region, IP), QR code generation, and dynamic redirection based on location or device. With clean UI, authentication via Clerk, and seamless dashboard navigation, it's designed to demonstrate high-level full-stack skills in building real-world scalable platforms.",
-  technologies: ["Next.js", "Tailwind CSS","Typescript", "MongoDB", "jwt Auth", "Chart.js", "Vercel"],
-  imageUrl: "/branqly.png", 
-  demoUrl: "https://branqly.xyz",
-  githubUrl: "https://github.com/ItsAbhishekkashyap/branqly", 
-  color: "from-pink-500 to-purple-700",
-  featured: true,
-  completed: "2025",
-  teamSize: 1,
-  difficulty: 5,
-  achievements: [
-    "Developed a complete link shortening and branding platform from scratch",
-    "Integrated advanced analytics showing region, device, IP, and click timestamps",
-    "Implemented QR code and custom alias generation",
-    "Built user authentication and session handling with jwt",
-    "Designed a responsive, modern dashboard UI using Tailwind CSS and Chart.js",
-    "Deployed fully on Vercel with a custom domain (branqly.xyz)",
-  ],
-},
+    id: 1,
+    title: "Branqly — Smart Link Management SaaS",
+    category: "web",
+    description:
+      "A full-featured SaaS platform to shorten, brand, analyze, and manage smart links with advanced analytics and custom domains.",
+    longDescription:
+      "Branqly is a production-ready SaaS web application that empowers creators, marketers, and businesses to manage their links like pros. Built with Next.js, Tailwind CSS, and MongoDB, Branqly offers branded URL shortening, detailed analytics (device, region, IP), QR code generation, and dynamic redirection based on location or device. With clean UI, authentication via Clerk, and seamless dashboard navigation, it's designed to demonstrate high-level full-stack skills in building real-world scalable platforms.",
+    technologies: ["Next.js", "Tailwind CSS", "Typescript", "MongoDB", "jwt Auth", "Chart.js", "Vercel"],
+    imageUrl: "/branqly.png",
+    demoUrl: "https://branqly.xyz",
+    githubUrl: "https://github.com/ItsAbhishekkashyap/branqly",
+    color: "from-pink-500 to-purple-700",
+    featured: true,
+    completed: "2025",
+    teamSize: 1,
+    difficulty: 5,
+    achievements: [
+      "Developed a complete link shortening and branding platform from scratch",
+      "Integrated advanced analytics showing region, device, IP, and click timestamps",
+      "Implemented QR code and custom alias generation",
+      "Built user authentication and session handling with jwt",
+      "Designed a responsive, modern dashboard UI using Tailwind CSS and Chart.js",
+      "Deployed fully on Vercel with a custom domain (branqly.xyz)",
+    ],
+  },
 
-{
-  id: 2,
-  title: "Sayvia — Anonymous Feedback Platform",
-  category: "web",
-  description:
-    "A privacy-focused SaaS platform for sending and receiving anonymous feedback with AI-powered writing assistance, spam filtering, and dark mode support.",
-  longDescription:
-    "Sayvia is a modern full-stack web application built using Next.js, TypeScript, and MongoDB that enables users to receive completely anonymous feedback without revealing their identity. It includes an integrated AI assistant to help users write better feedback messages, alongside powerful safeguards like rate limiting, spam detection, and bad word filtering to maintain content quality. With support for both light and dark modes, Sayvia delivers a clean and respectful experience for feedback exchange while showcasing real-world SaaS-grade engineering practices.",
-  technologies: [
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "MongoDB",
-    "OpenAI API",
-    "Rate Limiting",
-    "Content Filtering",
-    "Dark Mode"
-  ],
-  imageUrl: "/sayvia.png", // replace with actual screenshot path
-  demoUrl: "sayvia.xyz", // replace with deployment link if hosted
-  githubUrl: "https://github.com/ItsAbhishekkashyap/sayvia", // adjust if private or hosted elsewhere
-  color: "from-indigo-500 to-slate-900",
-  featured: false,
-  completed: "2025",
-  teamSize: 1,
-  difficulty: 5,
-  achievements: [
-    "Built a secure anonymous feedback system with full privacy",
-    "Integrated OpenAI-based AI Assistant to guide users in writing meaningful feedback",
-    "Implemented rate limiting and spam protection to prevent misuse",
-    "Added bad word filtering to maintain respectful communication",
-    "Supported theme switching with fully responsive light/dark mode UI",
-    "Structured project using modular TypeScript and scalable folder architecture",
-  ],
-},
+  {
+    id: 2,
+    title: "Sayvia — Anonymous Feedback Platform",
+    category: "web",
+    description:
+      "A privacy-focused SaaS platform for sending and receiving anonymous feedback with AI-powered writing assistance, spam filtering, and dark mode support.",
+    longDescription:
+      "Sayvia is a modern full-stack web application built using Next.js, TypeScript, and MongoDB that enables users to receive completely anonymous feedback without revealing their identity. It includes an integrated AI assistant to help users write better feedback messages, alongside powerful safeguards like rate limiting, spam detection, and bad word filtering to maintain content quality. With support for both light and dark modes, Sayvia delivers a clean and respectful experience for feedback exchange while showcasing real-world SaaS-grade engineering practices.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "OpenAI API",
+      "Rate Limiting",
+      "Content Filtering",
+      "Dark Mode"
+    ],
+    imageUrl: "/sayvia.png", // replace with actual screenshot path
+    demoUrl: "sayvia.xyz", // replace with deployment link if hosted
+    githubUrl: "https://github.com/ItsAbhishekkashyap/sayvia", // adjust if private or hosted elsewhere
+    color: "from-indigo-500 to-slate-900",
+    featured: false,
+    completed: "2025",
+    teamSize: 1,
+    difficulty: 5,
+    achievements: [
+      "Built a secure anonymous feedback system with full privacy",
+      "Integrated OpenAI-based AI Assistant to guide users in writing meaningful feedback",
+      "Implemented rate limiting and spam protection to prevent misuse",
+      "Added bad word filtering to maintain respectful communication",
+      "Supported theme switching with fully responsive light/dark mode UI",
+      "Structured project using modular TypeScript and scalable folder architecture",
+    ],
+  },
 
 
   {
@@ -125,9 +125,9 @@ const projects = [
     longDescription:
       "Crafted the complete frontend for Encore '25, the flagship college fest of IET Lucknow. The website features responsive layouts, and an aesthetic UI built to capture the excitement of the event. It serves as a dynamic platform for event showcases, registrations, and real-time updates. Designed with a visual appeal in mind to enhance user engagement and fest branding.",
     technologies: ["HTML", "Tailwind CSS", "Framer Motion", "Gsap"],
-    imageUrl: "/encore.png", 
+    imageUrl: "/encore.png",
     demoUrl: "https://encore25.vercel.app",
-    githubUrl: "https://github.com/ItsAbhishekkashyap", 
+    githubUrl: "https://github.com/ItsAbhishekkashyap",
     color: "from-indigo-600 to-pink-500",
     featured: true,
     completed: "2025",
@@ -150,9 +150,9 @@ const projects = [
     longDescription:
       "PassOp is a lightweight and responsive password manager built with React and Tailwind CSS. It allows users to store credentials along with associated app URLs for easy access and organization. Data is stored in localStorage for simplicity and speed, with MongoDB integration for future scalability. Designed with clean UI and focus on usability, it's perfect for personal use and beginners exploring secure app workflows.",
     technologies: ["React", "Tailwind CSS", "MongoDB", "Vite", "LocalStorage"],
-    imageUrl: "/PassOP.png", 
+    imageUrl: "/PassOP.png",
     demoUrl: "https://passop-eta.vercel.app",
-    githubUrl: "https://github.com/ItsAbhishekkashyap", 
+    githubUrl: "https://github.com/ItsAbhishekkashyap",
     color: "from-green-500 to-cyan-500",
     featured: false,
     completed: "2024",
@@ -165,7 +165,7 @@ const projects = [
       "Designed an intuitive and minimal UI using Tailwind CSS",
     ],
   },
-  
+
   {
     id: 5,
     title: "DevLog — Full-Stack Blog Platform",
@@ -175,9 +175,9 @@ const projects = [
     longDescription:
       "DevLog is a dynamic full-stack blog application built for developers and writers to share content easily. Users can register, log in, and manage their blog posts securely. The platform supports markdown formatting, displays all public blogs in a feed, and is styled with Tailwind CSS for a sleek, responsive design. Backend is powered by Node.js and MongoDB, ensuring a robust and scalable structure.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT"],
-    imageUrl: "/blog.png", 
-    demoUrl: "/https://github.com/ItsAbhishekkashyap", 
-    githubUrl: "https://github.com/ItsAbhishekkashyap", 
+    imageUrl: "/blog.png",
+    demoUrl: "/https://github.com/ItsAbhishekkashyap",
+    githubUrl: "https://github.com/ItsAbhishekkashyap",
     color: "from-gray-700 to-purple-600",
     featured: true,
     completed: "2024",
@@ -191,7 +191,7 @@ const projects = [
       "Created a user-friendly interface for managing posts",
     ],
   },
-  
+
   {
     id: 6,
     title: "GetMeAChai — Creator Support Platform",
@@ -221,8 +221,8 @@ const projects = [
 
 
 
-  
-  
+
+
   // {
   //   id: 6,
   //   title: "NYC Education Analytics",
@@ -330,42 +330,25 @@ export default function RedesignedProjects() {
       {featuredProjects.length > 0 && (
         <div className="mb-16">
           <ScrollReveal>
-            <h3 className="text-xl font-semibold mb-6 flex items-center gap-2 justify-center">
+            <h3 className="text-lg sm:text-xl font-semibold mb-6 flex items-center gap-2 justify-center">
               <Layers className="h-5 w-5 text-primary" />
               <span>Featured Projects</span>
             </h3>
           </ScrollReveal>
 
           <ScrollReveal>
-            <div className="relative rounded-xl overflow-hidden">
+            <div className="relative rounded-xl overflow-hidden px-2 sm:px-4">
               <AnimatePresence mode="wait" initial={false} custom={direction}>
                 <motion.div
                   key={featuredProjects[currentFeaturedIndex].id}
                   custom={direction}
-                  initial={{
-                    x: direction > 0 ? 1000 : -1000,
-                    opacity: 0,
-                  }}
-                  animate={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      x: { type: "spring", stiffness: 300, damping: 30 },
-                      opacity: { duration: 0.2 },
-                    },
-                  }}
-                  exit={{
-                    x: direction > 0 ? -1000 : 1000,
-                    opacity: 0,
-                    transition: {
-                      x: { type: "spring", stiffness: 300, damping: 30 },
-                      opacity: { duration: 0.2 },
-                    },
-                  }}
-                  className="relative w-full aspect-[16/9]"
+                  initial={{ x: direction > 0 ? 1000 : -1000, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1, transition: { x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } } }}
+                  exit={{ x: direction > 0 ? -1000 : 1000, opacity: 0, transition: { x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } } }}
+                  className="relative w-full aspect-[16/10] sm:aspect-[16/9]"
                 >
-                  <div className="absolute inset-0 flex flex-col md:flex-row">
-                    <div className="relative w-full h-48 md:h-auto md:w-1/2">
+                  <div className="absolute inset-0 flex flex-col overflow-scroll md:flex-row">
+                    <div className="relative w-full h-52 md:h-auto sm:h-64  md:w-1/2">
                       <Image
                         src={featuredProjects[currentFeaturedIndex].imageUrl || "/placeholder.svg"}
                         alt={featuredProjects[currentFeaturedIndex].title}
@@ -375,60 +358,46 @@ export default function RedesignedProjects() {
                       />
                     </div>
 
-                    <div
-                      className={cn(
-                        "w-full md:w-1/2 p-6 flex flex-col justify-center opacity-90 bg-gradient-to-r",
-                        featuredProjects[currentFeaturedIndex].color,
-                      )}
-                    >
-                      <Badge
-                        variant="outline"
-                        className="w-fit mb-4 bg-black/50 backdrop-blur-sm text-white border-white/20"
-                      >
+                    <div className={cn(
+                      "w-full md:w-1/2 p-4 sm:p-6 flex flex-col justify-center opacity-90 bg-gradient-to-r",
+                      featuredProjects[currentFeaturedIndex].color,
+                    )}>
+                      <Badge variant="outline" className="w-fit mb-2 sm:mb-4 bg-black/50 backdrop-blur-sm text-white border-white/20 text-xs sm:text-sm">
                         Featured Project
                       </Badge>
-                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4">
+
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">
                         {featuredProjects[currentFeaturedIndex].title}
                       </h3>
-                      <p className="text-white/90 mb-4 md:mb-6 text-sm md:text-base line-clamp-3 md:line-clamp-none">
+
+                      <p className="text-white/90 mb-4 text-sm sm:text-base line-clamp-3 sm:line-clamp-none">
                         {featuredProjects[currentFeaturedIndex].description}
                       </p>
 
-                      <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {featuredProjects[currentFeaturedIndex].technologies.slice(0, 3).map((tech, index) => (
-                          <Badge
-                            key={index}
-                            className="bg-white/20 hover:bg-white/30 text-white border-none backdrop-blur-sm"
-                          >
+                          <Badge key={index} className="bg-white/20 hover:bg-white/30 text-white border-none backdrop-blur-sm text-xs sm:text-sm">
                             {tech}
                           </Badge>
                         ))}
                         {featuredProjects[currentFeaturedIndex].technologies.length > 3 && (
-                          <Badge className="bg-white/20 hover:bg-white/30 text-white border-none backdrop-blur-sm">
+                          <Badge className="bg-white/20 hover:bg-white/30 text-white border-none backdrop-blur-sm text-xs sm:text-sm">
                             +{featuredProjects[currentFeaturedIndex].technologies.length - 3} more
                           </Badge>
                         )}
                       </div>
 
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-1 mb-2 sm:gap-3">
                         <Button
-                          className="bg-white text-black hover:bg-white/90 group text-sm"
+                          className="bg-white text-black hover:bg-white/90 group text-xs sm:text-sm"
                           onClick={() => handleDemoClick(featuredProjects[currentFeaturedIndex].demoUrl)}
                         >
                           Live Demo
-                          <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <ExternalLink className="ml-1 sm:ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
 
-                        <Button
-                          variant="outline"
-                          className="border-white text-white hover:bg-white/20 gap-2 text-sm"
-                          asChild
-                        >
-                          <a
-                            href={featuredProjects[currentFeaturedIndex].githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
+                        <Button variant="outline" className="border-white text-white hover:bg-white/20 gap-1 sm:gap-2 text-xs sm:text-sm" asChild>
+                          <a href={featuredProjects[currentFeaturedIndex].githubUrl} target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4" />
                             View Code
                           </a>
@@ -436,7 +405,7 @@ export default function RedesignedProjects() {
 
                         <Button
                           variant="outline"
-                          className="border-white text-white hover:bg-white/20 gap-2 text-sm"
+                          className="border-white text-white hover:bg-white/20 gap-1 sm:gap-2 text-xs sm:text-sm"
                           onClick={() => {
                             setSelectedProject(featuredProjects[currentFeaturedIndex])
                             setIsDialogOpen(true)
@@ -451,7 +420,7 @@ export default function RedesignedProjects() {
                 </motion.div>
               </AnimatePresence>
 
-              {/* Navigation controls */}
+              {/* Navigation Arrows */}
               <Button
                 size="icon"
                 variant="ghost"
@@ -470,14 +439,14 @@ export default function RedesignedProjects() {
                 <ChevronRight className="h-5 w-5" />
               </Button>
 
-              {/* Progress dots */}
+              {/* Pagination Dots */}
               <div className="absolute bottom-2 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1">
                 {featuredProjects.map((_, index) => (
                   <button
                     key={index}
                     className={cn(
                       "w-2 h-2 rounded-full transition-all",
-                      currentFeaturedIndex === index ? "bg-white scale-125" : "bg-white/50 hover:bg-white/80",
+                      currentFeaturedIndex === index ? "bg-white scale-125" : "bg-white/50 hover:bg-white/80"
                     )}
                     onClick={() => {
                       setDirection(index > currentFeaturedIndex ? 1 : -1)
@@ -490,6 +459,7 @@ export default function RedesignedProjects() {
             </div>
           </ScrollReveal>
         </div>
+
       )}
 
       <ScrollReveal>
@@ -721,7 +691,7 @@ export default function RedesignedProjects() {
       </Dialog>
     </SectionContainer>
 
-    
+
   )
 }
 

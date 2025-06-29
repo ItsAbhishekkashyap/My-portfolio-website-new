@@ -39,16 +39,21 @@ export default function RedesignedHero() {
     })
   }
 
-  const handleContactClick = () => {
-    toast({
-      title: "Contact Info",
-      description: "Email: abhi47025@gmail.com",
-      duration: 5000,
-    })
-  }
+  // const handleContactClick = () => {
+  //   toast({
+  //     title: "Contact Info",
+  //     description: "Email: abhi47025@gmail.com",
+  //     duration: 5000,
+      
+  //   })
+  // }
 
   const scrollToProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const scrollContact = () => {
+    document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})
   }
 
   // Typing effect for the subtitle
@@ -169,7 +174,7 @@ export default function RedesignedHero() {
               <Button
                 size="lg"
                 variant="outline"
-                onClick={handleContactClick}
+                onClick={scrollContact}
                 className="group relative overflow-hidden border-copper-coin/50 hover:border-copper-coin transition-colors duration-300"
               >
                 <span className="relative z-10">Contact Me</span>

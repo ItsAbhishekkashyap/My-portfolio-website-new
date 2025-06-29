@@ -42,7 +42,7 @@ export default function RedesignedHero() {
   const handleContactClick = () => {
     toast({
       title: "Contact Info",
-      description: "Email: abhi47025@gmail.com | Phone: (91+) 9335848661",
+      description: "Email: abhi47025@gmail.com",
       duration: 5000,
     })
   }
@@ -101,7 +101,7 @@ export default function RedesignedHero() {
         <div className="order-2 md:order-1 text-center md:text-left">
           <ScrollReveal>
             <Badge className="mb-4 px-3 py-1.5 text-sm bg-primary/20 border-primary/30 text-primary">
-              Electronics and Communication Engineer
+              Electronics and Communication Engineering Student
             </Badge>
           </ScrollReveal>
 

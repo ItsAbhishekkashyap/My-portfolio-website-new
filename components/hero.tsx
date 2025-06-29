@@ -15,7 +15,7 @@ export default function Hero() {
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <Badge variant="secondary" className="w-fit mb-8 bg-secondary text-secondary-foreground">
-          Electronics and Communication Engineer
+          Electronics and Communication Engineering student
         </Badge>
 
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-happy-hearts to-golden-nugget bg-clip-text text-transparent">

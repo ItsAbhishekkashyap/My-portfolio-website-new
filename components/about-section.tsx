@@ -44,7 +44,7 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t w-[40vw] from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-4 text-white">
                   <p className="font-medium">Abhishek Gond</p>
-                  <p className="text-sm text-white/80">ECE Engineer and Web developer</p>
+                  <p className="text-sm text-white/80">ECE Engineering student and Web developer</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function AboutSection() {
         <div>
           <StaggeredContainer>
             <StaggerItem>
-              <h3 className="text-2xl font-bold mb-4">Electronics and Communication Engineer | Driven by Curiosity, Powered by Code</h3>
+              <h3 className="text-2xl font-bold mb-4">Electronics and Communication Engineering student | Driven by Curiosity, Powered by Code</h3>
             </StaggerItem>
 
             <StaggerItem>

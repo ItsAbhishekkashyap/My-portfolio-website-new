@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+
+  /* global.css ya tailwind.css mein daal de */
+button:has(.lucide-menu) {
+  display: none !important;
+}
+
+/* hide any menu icon button inside a fixed div on bottom right */
+div.fixed.bottom-4.right-4 > button:has(.lucide-menu) {
+  display: none !important;
+}
+
+
+  
   :root {
     /* Light theme (default) */
     --background: 45 30% 98%;

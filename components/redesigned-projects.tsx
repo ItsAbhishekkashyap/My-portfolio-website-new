@@ -50,8 +50,74 @@ const projectCategories = [
 
 // Project data
 const projects = [
+
+
   {
-    id: 1,
+  id: 1,
+  title: "Branqly — Smart Link Management SaaS",
+  category: "web",
+  description:
+    "A full-featured SaaS platform to shorten, brand, analyze, and manage smart links with advanced analytics and custom domains.",
+  longDescription:
+    "Branqly is a production-ready SaaS web application that empowers creators, marketers, and businesses to manage their links like pros. Built with Next.js, Tailwind CSS, and MongoDB, Branqly offers branded URL shortening, detailed analytics (device, region, IP), QR code generation, and dynamic redirection based on location or device. With clean UI, authentication via Clerk, and seamless dashboard navigation, it's designed to demonstrate high-level full-stack skills in building real-world scalable platforms.",
+  technologies: ["Next.js", "Tailwind CSS","Typescript", "MongoDB", "jwt Auth", "Chart.js", "Vercel"],
+  imageUrl: "/branqly.png", 
+  demoUrl: "https://branqly.xyz",
+  githubUrl: "https://github.com/ItsAbhishekkashyap/branqly", 
+  color: "from-pink-500 to-purple-700",
+  featured: true,
+  completed: "2025",
+  teamSize: 1,
+  difficulty: 5,
+  achievements: [
+    "Developed a complete link shortening and branding platform from scratch",
+    "Integrated advanced analytics showing region, device, IP, and click timestamps",
+    "Implemented QR code and custom alias generation",
+    "Built user authentication and session handling with jwt",
+    "Designed a responsive, modern dashboard UI using Tailwind CSS and Chart.js",
+    "Deployed fully on Vercel with a custom domain (branqly.xyz)",
+  ],
+},
+
+{
+  id: 2,
+  title: "Sayvia — Anonymous Feedback Platform",
+  category: "web",
+  description:
+    "A privacy-focused SaaS platform for sending and receiving anonymous feedback with AI-powered writing assistance, spam filtering, and dark mode support.",
+  longDescription:
+    "Sayvia is a modern full-stack web application built using Next.js, TypeScript, and MongoDB that enables users to receive completely anonymous feedback without revealing their identity. It includes an integrated AI assistant to help users write better feedback messages, alongside powerful safeguards like rate limiting, spam detection, and bad word filtering to maintain content quality. With support for both light and dark modes, Sayvia delivers a clean and respectful experience for feedback exchange while showcasing real-world SaaS-grade engineering practices.",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "MongoDB",
+    "OpenAI API",
+    "Rate Limiting",
+    "Content Filtering",
+    "Dark Mode"
+  ],
+  imageUrl: "/sayvia.png", // replace with actual screenshot path
+  demoUrl: "sayvia.xyz", // replace with deployment link if hosted
+  githubUrl: "https://github.com/ItsAbhishekkashyap/sayvia", // adjust if private or hosted elsewhere
+  color: "from-indigo-500 to-slate-900",
+  featured: false,
+  completed: "2025",
+  teamSize: 1,
+  difficulty: 5,
+  achievements: [
+    "Built a secure anonymous feedback system with full privacy",
+    "Integrated OpenAI-based AI Assistant to guide users in writing meaningful feedback",
+    "Implemented rate limiting and spam protection to prevent misuse",
+    "Added bad word filtering to maintain respectful communication",
+    "Supported theme switching with fully responsive light/dark mode UI",
+    "Structured project using modular TypeScript and scalable folder architecture",
+  ],
+},
+
+
+  {
+    id: 3,
     title: "Encore '25 — College Fest Website",
     category: "web",
     description:
@@ -76,7 +142,7 @@ const projects = [
   }
   ,
   {
-    id: 2,
+    id: 4,
     title: "PassOp — Password Manager Web App",
     category: "web",
     description:
@@ -101,7 +167,7 @@ const projects = [
   },
   
   {
-    id: 3,
+    id: 5,
     title: "DevLog — Full-Stack Blog Platform",
     category: "web",
     description:
@@ -127,7 +193,7 @@ const projects = [
   },
   
   {
-    id: 4,
+    id: 6,
     title: "GetMeAChai — Creator Support Platform",
     category: "web",
     description:
@@ -151,6 +217,8 @@ const projects = [
       "Structured project using clean, modular Next.js app routing",
     ],
   },
+
+
 
 
   
@@ -496,7 +564,7 @@ export default function RedesignedProjects() {
                     <DialogDescription className="mt-2 text-sm">{selectedProject.description}</DialogDescription>
                   </div>
                   <div className="flex">
-                    {Array.from({ length: 5 }).map((_, i) => (
+                    {Array.from({ length: 6 }).map((_, i) => (
                       <Star
                         key={i}
                         className={`h-4 w-4 ${i < selectedProject.difficulty ? "fill-yellow-500 text-yellow-500" : "text-muted"}`}
@@ -710,7 +778,7 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
                     : "Research"}
           </Badge>
           <div className="flex">
-            {Array.from({ length: 5 }).map((_, i) => (
+            {Array.from({ length: 6 }).map((_, i) => (
               <Star
                 key={i}
                 className={`h-3 w-3 ${i < project.difficulty ? "fill-yellow-500 text-yellow-500" : "text-muted"}`}

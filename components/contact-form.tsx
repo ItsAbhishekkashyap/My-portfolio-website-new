@@ -100,7 +100,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
               <Phone className="h-5 w-5 text-primary" />
             </div>
@@ -108,7 +108,7 @@ export default function ContactForm() {
               <div className="text-sm text-muted-foreground">Phone</div>
               <div>91+ 9335848661</div>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">

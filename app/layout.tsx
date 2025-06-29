@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import ResponsiveHeader from "@/components/responsive-header"
 import ClientDiagnosticWrapper from "@/components/client-diagnostic-wrapper"
+import Chatbot from '@/components/chatbot'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
           {children}
           <Toaster />
           <ClientDiagnosticWrapper />
+          <Chatbot />
         </ThemeProvider>
       </body>
     </html>

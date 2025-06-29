@@ -95,7 +95,7 @@ export default function EnhancedFooter() {
             >
               <div className="font-bold text-xl mb-4">Abhishek Gond</div>
               <p className="text-muted-foreground mb-6">
-                Electronics and Communication Engineer || Web-developer || Graphic Designer
+                Electronics and Communication Engineering student || Web-developer || Graphic Designer
               </p>
 
               <div className="flex gap-3">
@@ -152,10 +152,10 @@ export default function EnhancedFooter() {
                   <Mail className="h-4 w-4 text-primary" />
                   <span>abhi47025@gmail.com</span>
                 </li>
-                <li className="flex items-center gap-3 text-muted-foreground">
+                {/* <li className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="h-4 w-4 text-primary" />
                   <span>(91+) 9335848661</span>
-                </li>
+                </li> */}
                 <li className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" />
                   <span>Lucknow, India</span>

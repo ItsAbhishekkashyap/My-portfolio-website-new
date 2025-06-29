@@ -52,7 +52,7 @@ const skillsData: SkillGroup[] = [
       { area: "VS Code", value: 95, fullMark: 100 },
       { area: "Postman", value: 85, fullMark: 100 },
       { area: "Figma", value: 60, fullMark: 100 },
-      { area: "Canva", value: 75, fullMark: 100 },
+      { area: "Canva", value: 90, fullMark: 100 },
     ],
   },
   {

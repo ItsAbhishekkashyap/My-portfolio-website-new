@@ -18,24 +18,22 @@ import { useToast } from "@/components/ui/use-toast"
 const projects = [
   {
     id: 1,
-    title: "Voice Cloning & Audio Processing Suite",
-    category: "Audio Processing & AI",
-    description:
-      "Comprehensive audio processing system including real-time voice cloning, multilingual transcription, and speaker diarization.",
-    technologies: ["TensorFlow TTS", "PyTorch", "Whisper", "FastAPI", "React"],
-    difficulty: 5,
-    completed: "2023",
-    teamSize: 3,
+    title: "Branqly — Smart Link Management SaaS",
+     category: "web",
+   description:
+    "A full-featured SaaS platform to shorten, brand, analyze, and manage smart links with advanced analytics and custom domains.",
+    technologies: ["Next.js", "Tailwind CSS","Typescript", "MongoDB", "jwt Auth", "Chart.js", "Vercel"],
+   completed: "2025",
+  teamSize: 1,
+  difficulty: 5,
     featured: true,
-    demoUrl: "#",
-    githubUrl: "#",
+   demoUrl: "https://branqly.xyz",
+  githubUrl: "https://github.com/ItsAbhishekkashyap/branqly", 
     images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "/branqly.png?height=400&width=600",
     ],
     details:
-      "A comprehensive voice cloning system that allows for real-time audio processing with minimal latency. The system uses state-of-the-art deep learning models to generate natural-sounding speech that matches the target voice.",
+      "A full-featured SaaS platform to shorten, brand, analyze, and manage smart links with advanced analytics and custom domains.",
   },
   {
     id: 2,

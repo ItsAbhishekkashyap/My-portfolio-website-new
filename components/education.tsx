@@ -232,10 +232,10 @@ export default function Education() {
               <Settings className="h-5 w-5" /> Skills Developed
             </h3>
             <div className="space-y-4">
-              <SkillProgressItem name="Full-Stack Development" value={75} />
+              <SkillProgressItem name="Full-Stack Development" value={85} />
               <SkillProgressItem name="Problem Solving (DSA)" value={70} />
               <SkillProgressItem name="React & Next.js" value={85} />
-              <SkillProgressItem name="Database & API Handling" value={60} />
+              <SkillProgressItem name="Database & API Handling" value={85} />
             </div>
           </div>
         </CardContent>

@@ -29,15 +29,15 @@ import {
 } from "lucide-react"
 
 // Dynamically import the 3D globe component with no SSR
-const SkillsGlobe = dynamic(() => import("@/components/3d-skills-globe"), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[500px] flex items-center justify-center">
-      <Loader2 className="h-8 w-8 animate-spin text-primary" />
-      <span className="ml-2">Loading 3D Globe...</span>
-    </div>
-  ),
-})
+// const SkillsGlobe = dynamic(() => import("@/components/3d-skills-globe"), {
+//   ssr: false,
+//   loading: () => (
+//     <div className="w-full h-[500px] flex items-center justify-center">
+//       <Loader2 className="h-8 w-8 animate-spin text-primary" />
+//       <span className="ml-2">Loading 3D Globe...</span>
+//     </div>
+//   ),
+// })
 
 // Skill categories with icons
 const skillCategories = [
@@ -375,7 +375,8 @@ export default function RedesignedSkills() {
                       </div>
                     </StaggeredContainer>
                   ) : (
-                    <div className="flex justify-center">{isMounted && <SkillsGlobe />}</div>
+                    // <div className="flex justify-center">{isMounted && <SkillsGlobe />}</div>
+                    <div className="flex justify-center">{isMounted}</div>
                   )}
                 </CardContent>
               </Card>

@@ -17,6 +17,7 @@ import { FloatingThemeSwitcher } from "@/components/floating-theme-switcher"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { SectionFallback } from "@/components/section-fallback"
 import { Loader2 } from "lucide-react"
+import BlogPreview from "@/components/blog-preview"
 
 // Simple loading component
 function LoadingSection({ name }: { name: string }) {
@@ -87,11 +88,11 @@ export default function Home() {
         </Suspense>
       </ErrorBoundary> */}
 
-      {/* <ErrorBoundary fallback={<SectionFallback title="Blog" />}>
+      <ErrorBoundary fallback={<SectionFallback title="Blog" />}>
         <Suspense fallback={<LoadingSection name="Blog" />}>
           <BlogPreview />
         </Suspense>
-      </ErrorBoundary> */}
+      </ErrorBoundary>
 
       <ErrorBoundary fallback={<SectionFallback title="Contact" />}>
         <Suspense fallback={<LoadingSection name="Contact" />}>

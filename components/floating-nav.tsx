@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Home, Code, Briefcase, GraduationCap, Book, Send, Menu, X, ChevronUp } from "lucide-react"
+import { Home, Code, Briefcase, GraduationCap, Book, Send, Menu, X, ChevronUp, Pen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { useToast } from "@/components/ui/use-toast"
@@ -21,7 +21,8 @@ const navItems: NavItem[] = [
   { name: "Experience", href: "#experience", icon: <Briefcase className="h-[18px] w-[18px]" /> },
   { name: "Projects", href: "#projects", icon: <Code className="h-[18px] w-[18px] rotate-90" /> },
   { name: "Education", href: "#education", icon: <GraduationCap className="h-[18px] w-[18px]" /> },
-  // { name: "Publications", href: "#publications", icon: <Book className="h-[18px] w-[18px]" /> },
+  // { name: "Blog", href: "#blog", icon: <Pen className="h-[18px] w-[18px]" /> },
+  { name: "Blog", href: "#blog", icon: <Book className="h-[18px] w-[18px]" /> },
   { name: "Contact", href: "#contact", icon: <Send className="h-[18px] w-[18px]" /> },
 ]
 
@@ -102,15 +103,15 @@ export default function FloatingNav() {
             transition={{ duration: 0.3 }}
             className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 hidden md:block"
           >
-            <div className="backdrop-blur-md bg-background/80 rounded-full border shadow-lg p-1.5">
-              <nav className="flex items-center gap-1">
+            <div className="backdrop-blur-md right-20 relative bg-background/80 rounded-full border shadow-lg p-1.5">
+              <nav className="flex  items-center gap-1">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleItemClick(e, item.href)}
                     className={cn(
-                      "relative px-4 py-2 rounded-full flex items-center gap-2 transition-all duration-300",
+                      "relative px-4 py-2  rounded-full flex items-center gap-2 transition-all duration-300",
                       activeSection === item.href.slice(1)
                         ? "text-white bg-primary"
                         : "text-muted-foreground hover:text-foreground hover:bg-accent",

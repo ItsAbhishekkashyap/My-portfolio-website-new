@@ -291,10 +291,10 @@ export default function BlogPreview() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent mb-4">
-            Latest Insights
+           Articles & Case Studies
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Thoughts, insights, and perspectives on AI, technology, and community building.
+           Explore full-stack builds, real-world challenges, and scalable MVPs — insights from hands-on coding, product thinking, and freelance dev journeys.
           </p>
         </motion.div>
 

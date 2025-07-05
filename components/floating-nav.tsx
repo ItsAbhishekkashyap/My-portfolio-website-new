@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
   { name: "Projects", href: "#projects", icon: <Code className="h-[18px] w-[18px] rotate-90" /> },
   { name: "Education", href: "#education", icon: <GraduationCap className="h-[18px] w-[18px]" /> },
   // { name: "Blog", href: "#blog", icon: <Pen className="h-[18px] w-[18px]" /> },
-  { name: "Blog", href: "#blog", icon: <Book className="h-[18px] w-[18px]" /> },
+  { name: "Articles", href: "#blog", icon: <Book className="h-[18px] w-[18px]" /> },
   { name: "Contact", href: "#contact", icon: <Send className="h-[18px] w-[18px]" /> },
 ]
 

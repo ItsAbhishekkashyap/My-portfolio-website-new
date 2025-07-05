@@ -202,7 +202,7 @@
 //                 </div>
 //             )}
 
-            
+
 
 //             <EnhancedFooter />
 //         </section>
@@ -280,8 +280,8 @@ const Blog = () => {
         setBlogs(data.blogs)
         setTotalPages(data.totalPages)
       } catch (err) {
-        toast({ 
-          title: 'Failed to fetch blogs', 
+        toast({
+          title: 'Failed to fetch blogs',
           description: 'Please try again.',
           variant: 'destructive'
         })
@@ -317,15 +317,16 @@ const Blog = () => {
         {/* Hero Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent mb-4">
-            Insights & Stories
+            Articles & Case Studies
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Exploring the intersection of code, creativity, and personal growth through thoughtful writing.
+            Explore full-stack builds, real-world challenges, and scalable MVPs — insights from hands-on coding, product thinking, and freelance dev journeys.
           </p>
         </div>
 
         {/* Search and Filter */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-12 bg-muted/50 p-6 rounded-xl">
+          {/* Search Input */}
           <div className="relative w-full md:w-1/2">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
@@ -336,24 +337,36 @@ const Blog = () => {
             />
           </div>
 
-          <div className="w-full md:w-auto flex items-center gap-2">
-            <Tag className="h-4 w-4 text-muted-foreground" />
-            <Select onValueChange={handleTagChange} value={selectedTag}>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Filter by topic" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Topics</SelectItem>
-                {isClient &&
-                  uniqueTags.map((tag, i) => (
-                    <SelectItem key={i} value={tag}>
-                      {tag}
-                    </SelectItem>
-                  ))}
-              </SelectContent>
-            </Select>
+          {/* Tag Select + Login Button */}
+          <div className="w-full md:w-auto flex flex-wrap gap-2 items-center">
+            <div className="flex items-center gap-2">
+              <Tag className="h-4 w-4 text-muted-foreground" />
+              <Select onValueChange={handleTagChange} value={selectedTag}>
+                <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Filter by topic" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Topics</SelectItem>
+                  {isClient &&
+                    uniqueTags.map((tag, i) => (
+                      <SelectItem key={i} value={tag}>
+                        {tag}
+                      </SelectItem>
+                    ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* 🚀 Beautiful Login Button */}
+            <a
+              href="/login"
+              className="inline-flex items-center gap-2 bg-background text-white px-4 py-2 rounded-md hover:text-primary border transition-colors"
+            >
+              🔐 Admin Login
+            </a>
           </div>
         </div>
+
 
         {/* Blog Grid */}
         {isClient && blogs.length > 0 ? (
@@ -379,8 +392,8 @@ const Blog = () => {
                   <CardHeader className="px-6 pt-6 pb-2">
                     <div className="flex flex-wrap gap-2 mb-3">
                       {post.categories.map((cat, i) => (
-                        <Badge 
-                          key={i} 
+                        <Badge
+                          key={i}
                           variant="secondary"
                           className="text-xs font-medium"
                         >
@@ -446,8 +459,8 @@ const Blog = () => {
               {search || selectedTag ? 'No matching articles found' : 'No articles published yet'}
             </h3>
             {(search || selectedTag) && (
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 className="mt-4"
                 onClick={() => {
                   setSearch('')

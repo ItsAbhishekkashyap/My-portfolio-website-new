@@ -18,6 +18,7 @@ import { ErrorBoundary } from "@/components/error-boundary"
 import { SectionFallback } from "@/components/section-fallback"
 import { Loader2 } from "lucide-react"
 import BlogPreview from "@/components/blog-preview"
+import { DraggableCardDemo } from "@/components/Achievements"
 
 // Simple loading component
 function LoadingSection({ name }: { name: string }) {
@@ -88,17 +89,27 @@ export default function Home() {
         </Suspense>
       </ErrorBoundary> */}
 
+      {/* <ErrorBoundary fallback={<SectionFallback title="Achievements" />}>
+        <Suspense fallback={<LoadingSection name="Achievements" />}>
+          <DraggableCardDemo/>
+        </Suspense>
+      </ErrorBoundary> */}
+
       <ErrorBoundary fallback={<SectionFallback title="Blog" />}>
         <Suspense fallback={<LoadingSection name="Blog" />}>
           <BlogPreview />
         </Suspense>
       </ErrorBoundary>
 
+      
+
       <ErrorBoundary fallback={<SectionFallback title="Contact" />}>
         <Suspense fallback={<LoadingSection name="Contact" />}>
           <ContactForm />
         </Suspense>
       </ErrorBoundary>
+
+      
 
       <EnhancedFooter />
     </main>

@@ -188,7 +188,7 @@
 
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, Suspense } from "react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/components/ui/use-toast"
@@ -516,12 +516,15 @@ export default function AdminBlogForm() {
         <div className="space-y-2">
           <Label>Content *</Label>
           <div className="rounded-lg border overflow-hidden">
+            <Suspense fallback={<div>Loading...</div>}>
             <ClientOnly>
+
               <BlogEditor 
                 content={formData.content} 
                 onChange={handleContentChange} 
               />
             </ClientOnly>
+            </Suspense>
           </div>
         </div>
 

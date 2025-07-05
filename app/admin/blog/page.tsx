@@ -187,17 +187,15 @@
 
 
 // app/admin/blog/page.tsx
-import dynamic from "next/dynamic"
-import { Suspense } from "react"
 
-const AdminBlogForm = dynamic(() => import("./AdminBlogForm"), {
-  ssr: false, // 💡 This ensures it's fully client-rendered
-})
+import { Suspense } from "react"
+import AdminBlogFormClient from "@/components/AdminBlogFormClient"
 
 export default function AdminBlogPage() {
   return (
     <Suspense fallback={<div className="p-4 text-center">Loading form...</div>}>
-      <AdminBlogForm />
+      <AdminBlogFormClient />
     </Suspense>
   )
 }
+

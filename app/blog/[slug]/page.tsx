@@ -321,72 +321,71 @@ export default async function BlogPostPage(
 
   return (
     <>
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
-      <article className="relative">
-        {/* Article Header */}
-        <header className="mb-10">
-          <div className="flex flex-wrap gap-2 mb-4">
-            {blog.categories.map((category, index) => (
-              <Badge key={index} variant="secondary" className="flex items-center gap-1">
-                <Tag className="h-3 w-3" />
-                {category}
-              </Badge>
-            ))}
-          </div>
-          
-          <h1 className="text-3xl sm:text-4xl md:text-5xl pb-2 font-bold tracking-tight mb-4 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-            {blog.title}
-          </h1>
-          
-          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
-            <div className="flex items-center gap-1">
-              <Calendar className="h-4 w-4" />
-              <span>{new Date(blog.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}</span>
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
+        <article className="relative">
+          {/* Article Header */}
+          <header className="mb-10">
+            <div className="flex flex-wrap gap-2 mb-4">
+              {blog.categories.map((category, index) => (
+                <Badge key={index} variant="secondary" className="flex items-center gap-1">
+                  <Tag className="h-3 w-3" />
+                  {category}
+                </Badge>
+              ))}
             </div>
-            <div className="flex items-center gap-1">
-              <Clock className="h-4 w-4" />
-              <span>{blog.readTime} min read</span>
+
+            <h1 className="text-3xl sm:text-4xl md:text-5xl pb-2 font-bold tracking-tight mb-4 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+              {blog.title}
+            </h1>
+
+            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
+              <div className="flex items-center gap-1">
+                <Calendar className="h-4 w-4" />
+                <span>{new Date(blog.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Clock className="h-4 w-4" />
+                <span>{blog.readTime} min read</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Eye className="h-4 w-4" />
+                <span>{blog.views.toLocaleString()} views</span>
+              </div>
             </div>
-            <div className="flex items-center gap-1">
-              <Eye className="h-4 w-4" />
-              <span>{blog.views.toLocaleString()} views</span>
-            </div>
+
+            {blog.coverImage && (
+              <div className="mb-8 relative aspect-video w-full overflow-hidden rounded-2xl border shadow-lg">
+                <Image
+                  src={blog.coverImage}
+                  alt={blog.title}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                />
+              </div>
+            )}
+          </header>
+
+          {/* Article Content */}
+          <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-semibold prose-a:text-primary hover:prose-a:text-primary/80 prose-blockquote:border-l-primary prose-blockquote:bg-muted/50 prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded prose-img:rounded-xl prose-img:shadow-md">
+            <div dangerouslySetInnerHTML={{ __html: blog.content }} />
           </div>
 
-          {blog.coverImage && (
-            <div className="mb-8 relative aspect-video w-full overflow-hidden rounded-2xl border shadow-lg">
-              <Image
-                src={blog.coverImage}
-                alt={blog.title}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-              />
+          {/* Admin Controls */}
+          {isAdmin && (
+            <div className="mt-12 border-t pt-8">
+              <AdminButtons slug={blog.slug} />
             </div>
           )}
-        </header>
+        </article>
+      </main>
 
-        {/* Article Content */}
-        <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-semibold prose-a:text-primary hover:prose-a:text-primary/80 prose-blockquote:border-l-primary prose-blockquote:bg-muted/50 prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded prose-img:rounded-xl prose-img:shadow-md">
-          <div dangerouslySetInnerHTML={{ __html: blog.content }} />
-        </div>
-
-        {/* Admin Controls */}
-        {isAdmin && (
-          <div className="mt-12 border-t pt-8">
-            <AdminButtons slug={blog.slug} />
-          </div>
-        )}
-      </article>
-
-     
-    </main>
-     <EnhancedFooter/>
-     </>
+      <EnhancedFooter />
+    </>
   )
 }

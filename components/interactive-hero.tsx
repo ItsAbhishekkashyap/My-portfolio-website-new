@@ -37,7 +37,7 @@ export default function InteractiveHero() {
   const handleContactClick = () => {
     toast({
       title: "Contact Info",
-      description: "Email: abhi47025@gmail.com | Phone: (91+) 9335848661",
+      description: "Email: abhi47025@gmail.com",
       duration: 5000,
     })
   }
@@ -117,7 +117,7 @@ export default function InteractiveHero() {
             <Mail className="h-4 w-4" />
             <span>abhi47025@gmail.com</span>
             <span className="mx-2">|</span>
-            <span>(91+) 9335848661</span>
+            {/* <span>(91+) 9335848661</span> */}
           </motion.div>
 
           <motion.p

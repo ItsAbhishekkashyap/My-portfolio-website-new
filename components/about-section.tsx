@@ -33,7 +33,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative z-10 rounded-lg sm:w-[40vw] sm:h-[80vh] object-cover  overflow-hidden border border-white/10 shadow-xl">
               <Image
-                src="/A3.jpg?height=400&width=400"
+                src="/A3.png?height=400&width=400"
                 alt="Abhishek Gond"
                 width={400}
                 height={400}

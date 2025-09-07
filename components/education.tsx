@@ -170,7 +170,7 @@ export default function Education() {
             <span>📅 2023 - 2027</span>
           </div>
           <div className="text-muted-foreground text-sm">📍 Lucknow, India</div>
-          <div className="text-muted-foreground text-sm">📘 YGPA: 8.64 (First Year)</div>
+          <div className="text-muted-foreground text-sm">📘 YGPA: 8.3</div>
           <p className="text-muted-foreground text-sm mt-2">
             📚 <span className="font-medium">Relevant Coursework:</span> Digital Electronics, Signal Systems, Programming in C/C++, Data Structures and Algorithms, Web Development, Engineering Mathematics.
           </p>
@@ -187,11 +187,11 @@ export default function Education() {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <CourseItem name="Data Structures" grade="A" />
                 <CourseItem name="C++ Programming" grade="A" />
-                <CourseItem name="Digital Electronics" grade="A" />
-                <CourseItem name="Signals & Systems" grade="A" />
-                <CourseItem name="Mathematics IV" grade="A" />
-                <CourseItem name="COA" grade="A" />
-                <CourseItem name="Sensor " grade="A" />
+                <CourseItem name="IC Circuit" grade="A" />
+                <CourseItem name="POC" grade="A" />
+                <CourseItem name="Verilog" grade="A" />
+                <CourseItem name="Optical Communication" grade="A" />
+                <CourseItem name="Microprocessor " grade="A" />
                 <CourseItem name="Web Dev" grade="A+" />
               </div>
             </div>

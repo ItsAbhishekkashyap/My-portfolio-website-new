@@ -246,7 +246,7 @@ export default function RedesignedHero() {
               whileHover={{ scale: 1.05 }}
             >
               <Image
-                src="/A3.jpg?height=400&width=400"
+                src="/A3.png?height=400&width=400"
                 alt="Abhishek Gond"
                 fill
                 className="object-cover"

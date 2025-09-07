@@ -95,7 +95,7 @@ export default function EnhancedFooter() {
             >
               <div className="font-bold text-xl mb-4">Abhishek Gond</div>
               <p className="text-muted-foreground mb-6">
-                Electronics and Communication Engineering student || Web-developer || Graphic Designer
+                Electronics and Communication Engineering Student || Aspiring Software Engineer || Web-Developer || Graphic Designer
               </p>
 
               <div className="flex gap-3">

@@ -53,7 +53,7 @@ export default function Header() {
             </div>
             <div className="hidden md:block">
               <div className="font-bold">Abhishek Gond</div>
-              <div className="text-xs text-muted-foreground">Electronics and Communication Engineering student</div>
+              <div className="text-xs text-muted-foreground">Electronics and Communication Engineering Student</div>
             </div>
           </div>
         </motion.div>

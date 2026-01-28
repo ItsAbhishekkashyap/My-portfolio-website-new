@@ -35,17 +35,17 @@ const experiences = [
     description:
       "Building impactful web applications and designing visuals for college events, hackathons, and personal projects with a focus on UI/UX and full-stack functionality.",
     responsibilities: [
-      "Developed multiple full-stack web applications using React, Node.js, and Firebase including blog platforms, ebook apps, and admin dashboards",
+      "Developed multiple full-stack web applications using React, NextJS, TailwindCSS, JavaScript, TypeScript, Node.js, MongoDB and Supabase including menuluxe, placement cell portal, branqly, sayvia and admin dashboards",
       "Designed and deployed the official frontend for IET Lucknow’s college fest using HTML, CSS, JavaScript, and Tailwind CSS",
       "Created event posters, social media creatives, and logos using Canva and Figma to boost event engagement",
       
     ],
     skills: [
-      "HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Next.js", "Mongodb","Postman", "Express",
+      "HTML", "CSS", "JavaScript","TypeScript", "React", "Tailwind CSS", "Node.js", "Next.js", "Mongodb", "Supabase","Postman", "Express",
       "Figma", "Canva", "UI/UX Design", "Graphic Design"
     ],
     metrics: [
-      { value: "10+", label: "Web Projects" },
+      { value: "10+", label: "Full Stack Projects" },
    
       { value: "100+", label: "Canva Designs Created" },
       

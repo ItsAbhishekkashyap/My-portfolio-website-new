@@ -26,8 +26,10 @@ Website Structure of Abhishek Gond:
 
 - 🛠️ Projects Section:
   Showcases major projects like:
-    • Branqly SaaS Platform live link : branqly.xyz
-    • Sayvia a feedback platform live link: sayvia.xyz
+  • Placement cell Webiste of IET Lucknow live link : https://placementietlucknow.vercel.app/
+  • Menuluxe SaaS Digital Menu Platform live link : https://menuluxe.vercel.app/
+    • Branqly SaaS Platform live link : https://branqly.xyz
+    • Sayvia a feedback platform live link: https://sayvia.xyz
     • Blog Platform (React + Node.js) which are in building phase
     • GetMeAChai (Next.js + Tailwind CSS) 
     • SIH 2024 Hackathon participated in college round

@@ -117,11 +117,11 @@ export default function AboutSection() {
               </Button>
               <Button variant="outline" className="ml-3  hover:bg-green-700 gap-2 group" asChild>
                 <a
-                  href="https://www.fiverr.com/s/kLjBgzL"
+                  href="https://www.upwork.com/freelancers/~01e7898c20897ee6a6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>View Fiverr</span>
+                  <span>View Upwork</span>
                   <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>

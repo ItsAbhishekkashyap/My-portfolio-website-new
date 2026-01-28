@@ -79,6 +79,8 @@ const projects = [
     ],
   },
 
+  
+
   {
     id: 2,
     title: "Sayvia — Anonymous Feedback Platform",
@@ -218,34 +220,67 @@ const projects = [
     ],
   },
 
+  {
+    id: 7,
+    title: "MenuLuxe — AI-Powered Digital Menu SaaS",
+    category: "web",
+    description:
+      "A modern SaaS platform enabling restaurants to create, manage, and share dynamic digital menus with real-time updates and AI integration.",
+    longDescription:
+      "MenuLuxe is a full-stack SaaS solution designed to replace static PDF menus with interactive, mobile-first web pages. Built on the Next.js App Router for superior performance and SEO, it leverages Supabase (PostgreSQL) for robust data management and Row Level Security (RLS). The platform features an intuitive dashboard for restaurant owners to manage items and categories in real-time. Currently integrating Google Gemini 1.5 Flash API to allow 'Magic Import'—automatically converting physical menu photos into structured digital data.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "Gemini API", "Framer Motion"],
+    imageUrl: "/menuluxe.png", 
+    demoUrl: "https://menuluxe.vercel.app", 
+    githubUrl: "https://github.com/ItsAbhishekkashyap/digital-menu-system",
+    color: "from-orange-500 to-red-600",
+    featured: true,
+    completed: "2026",
+    teamSize: 1,
+    difficulty: 4,
+    achievements: [
+      "Architected a scalable database schema using Supabase (PostgreSQL) with strict RLS policies",
+      "Built a high-performance, server-rendered storefront for instant menu loading",
+      "Designed a 'Magic Import' workflow using Google Gemini API to parse menu images (In Progress)",
+      "Implemented real-time content updates, removing the need for page refreshes",
+      "Created a unified dashboard for managing categories, items, and pricing",
+      "Optimized for Mobile-First experience, replacing hard-to-read PDF QR codes",
+    ],
+},
+
+
+{
+    id: 8,
+    title: "IET Placement Portal — Official Recruitment Hub",
+    category: "web",
+    description:
+      "The official digital platform for IET Lucknow's Training & Placement Cell, streamlining recruitment updates for 500+ students.",
+    longDescription:
+      "This project serves as the central communication hub for the Placement Cell of IET Lucknow. Developed to replace legacy systems, it provides a highly responsive and accessible interface for students to track company drives, notices, and recruitment stats. Built with a focus on raw performance using HTML5, utility-first Tailwind CSS, and optimized JavaScript, the site ensures instant load times even under high traffic. It is officially deployed and actively used by the 2025-2026 batch.",
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript (ES6+)", "Vercel", "DOM Manipulation"],
+    imageUrl: "/iet-placement.png", 
+    demoUrl: "https://placementietlucknow.vercel.app", 
+    githubUrl: "https://github.com/ItsAbhishekkashyap/PlacementIetlucknow",
+    color: "from-blue-600 to-cyan-500",
+    featured: true,
+    completed: "2026",
+    teamSize: 1,
+    difficulty: 3,
+    achievements: [
+      "Developed and deployed the official website for IET Lucknow's Placement Cell",
+      "Achieved 100/100 Lighthouse Performance scores by using a lightweight tech stack",
+      "Designed a fully responsive UI that works seamlessly across all mobile devices",
+      "Implemented dynamic notice rendering using optimized JavaScript",
+      "Replaced the manual/excel-based notification system with a centralized digital hub",
+      "Successfully handled traffic from 500+ students during peak placement drives",
+    ],
+}
 
 
 
 
 
-  // {
-  //   id: 6,
-  //   title: "NYC Education Analytics",
-  //   category: "data",
-  //   description: "Data analysis and visualization platform for NYC public school performance metrics.",
-  //   longDescription:
-  //     "A comprehensive data analysis platform that processes and visualizes performance metrics from NYC public schools. The system includes predictive models for identifying at-risk students and schools that need additional resources.",
-  //   technologies: ["Python", "Pandas", "Scikit-learn", "Tableau", "R"],
-  //   imageUrl: "/placeholder.svg?height=600&width=800",
-  //   demoUrl: "#",
-  //   githubUrl: "https://github.com/swilliams9772",
-  //   color: "from-indigo-600 to-blue-600",
-  //   featured: false,
-  //   completed: "2022",
-  //   teamSize: 4,
-  //   difficulty: 4,
-  //   achievements: [
-  //     "Analyzed NYC public school data to identify performance patterns",
-  //     "Built predictive models for student success with Scikit-learn",
-  //     "Created interactive visualizations with Tableau",
-  //     "Presented findings to education stakeholders",
-  //   ],
-  // },
+
+  
 ]
 
 export default function RedesignedProjects() {

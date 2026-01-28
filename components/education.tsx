@@ -1,142 +1,3 @@
-// import type React from "react"
-// import { BookOpen, GraduationCap, Trophy, CheckCircle } from "lucide-react"
-// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-// import { Progress } from "@/components/ui/progress"
-
-// export default function Education() {
-//   return (
-//     <section id="education" className="py-12">
-//       <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
-
-//       <Card className="bg-gradient-to-r from-indigo-950 to-purple-950 border-none">
-//         <CardHeader className="pb-2">
-//           <div className="flex items-center gap-2">
-//             <GraduationCap className="h-5 w-5" />
-//             <CardTitle>Electronics and Communication Engineering</CardTitle>
-//           </div>
-//           <div className="flex justify-between items-center mt-2">
-//             <div className="text-muted-foreground">Institute of Engineering & Technology, Lucknow</div>
-//             <div>2023 - 2027</div>
-//           </div>
-//           <div className="text-muted-foreground">Lucknow, India</div>
-//           <div className="text-muted-foreground">YGPA: 8.53 (First Year)</div>
-//           <div className="text-muted-foreground mt-1">
-//             Relevant Coursework: Digital Electronics, Signal Systems, Programming in C/C++, Data Structures and Algorithms, Web Development, Engineering Mathematics.
-//           </div>
-//         </CardHeader>
-//         <CardContent>
-//           <div className="grid md:grid-cols-2 gap-8 mt-4">
-//             <div>
-//               <h3 className="text-lg font-semibold mb-4">Key Coursework</h3>
-//               <div className="grid grid-cols-2 gap-4">
-//                 <CourseItem name="Data Structures" grade="A" />
-//                 <CourseItem name="C++ Programming" grade="A" />
-//                 <CourseItem name="Digital Electronics" grade="A" />
-//                 <CourseItem name="Signals & Systems" grade="A" />
-//                 <CourseItem name="Mathematics II & III" grade="A" />
-//                 <CourseItem name="Computer Architecture" grade="A" />
-//                 <CourseItem name="Sensor & Instrumentation" grade="A" />
-//                 <CourseItem name="Web Development (Self-learned)" grade="A+" />
-//               </div>
-//             </div>
-
-//             <div>
-//               <h3 className="text-lg font-semibold mb-4">Key Achievements</h3>
-//               <div className="space-y-6">
-//                 <AchievementItem
-//                   icon={<Trophy className="h-5 w-5" />}
-//                   title="Encore Fest Website"
-//                   description="Spearheaded the frontend development of Encore 2025's official website, showcasing events, team, and timeline for IET Lucknow’s biggest college fest."
-//                 />
-
-//                 <AchievementItem
-//                   icon={<CheckCircle className="h-5 w-5" />}
-//                   title="Full-Stack Projects"
-//                   description="Developed multiple full-stack applications using MERN, Next.js, Tailwind, and Firebase."
-//                 />
-//                 <AchievementItem
-//                   icon={<BookOpen className="h-5 w-5" />}
-//                   title="Hackathon Participation"
-//                   description="Participated in SIH and various internal hackathons with strong contributions in web and AI."
-//                 />
-
-//                 <AchievementItem
-//                   icon={<Trophy className="h-5 w-5" />}
-//                   title="Silver Medalist – Taekwondo"
-//                   description="Secured Silver in Taekwondo at IIT BHU Zonal Tournament, representing IET Lucknow with pride and discipline."
-//                 />
-
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="mt-8">
-//             <h3 className="text-lg font-semibold mb-4">Skills Developed</h3>
-//             <div className="space-y-4">
-//               <SkillProgressItem name="Full-Stack Development" value={75} />
-//               <SkillProgressItem name="Problem Solving (DSA)" value={70} />
-//               <SkillProgressItem name="React & Next.js" value={85} />
-//               <SkillProgressItem name="Database & API Handling" value={60} />
-//             </div>
-//           </div>
-//         </CardContent>
-//       </Card>
-//     </section>
-//   )
-// }
-
-// interface CourseItemProps {
-//   name: string
-//   grade: string
-// }
-
-// function CourseItem({ name, grade }: CourseItemProps) {
-//   return (
-//     <div className="flex justify-between items-center">
-//       <div>{name}</div>
-//       <div className="bg-white text-black w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">
-//         {grade}
-//       </div>
-//     </div>
-//   )
-// }
-
-// interface AchievementItemProps {
-//   icon: React.ReactNode
-//   title: string
-//   description: string
-// }
-
-// function AchievementItem({ icon, title, description }: AchievementItemProps) {
-//   return (
-//     <div className="bg-black/20 rounded-lg p-4">
-//       <div className="flex items-center gap-2 mb-2">
-//         {icon}
-//         <h4 className="font-medium">{title}</h4>
-//       </div>
-//       <p className="text-sm text-muted-foreground">{description}</p>
-//     </div>
-//   )
-// }
-
-// interface SkillProgressItemProps {
-//   name: string
-//   value: number
-// }
-
-// function SkillProgressItem({ name, value }: SkillProgressItemProps) {
-//   return (
-//     <div>
-//       <div className="flex justify-between items-center mb-1">
-//         <div>{name}</div>
-//         <div>{value}%</div>
-//       </div>
-//       <Progress value={value} className="h-2" />
-//     </div>
-//   )
-// }
-
-
 
 import type React from "react"
 import {
@@ -187,12 +48,12 @@ export default function Education() {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <CourseItem name="Data Structures" grade="A" />
                 <CourseItem name="C++ Programming" grade="A" />
-                <CourseItem name="IC Circuit" grade="A" />
-                <CourseItem name="POC" grade="A" />
-                <CourseItem name="Verilog" grade="A" />
-                <CourseItem name="Optical Communication" grade="A" />
-                <CourseItem name="Microprocessor " grade="A" />
-                <CourseItem name="Web Dev" grade="A+" />
+                <CourseItem name="Control System" grade="A" />
+                <CourseItem name="Digital Communication" grade="A" />
+                <CourseItem name="AI Technology" grade="A" />
+                <CourseItem name="Radar" grade="A" />
+                <CourseItem name="DCN " grade="A" />
+                <CourseItem name="FullStack" grade="A+" />
               </div>
             </div>
 

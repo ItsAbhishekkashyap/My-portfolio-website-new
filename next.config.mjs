@@ -1,10 +1,8 @@
 let userConfig = undefined
 try {
-  // try to import ESM first
   userConfig = await import('./v0-user-next.config.mjs')
 } catch (e) {
   try {
-    // fallback to CJS import
     userConfig = await import("./v0-user-next.config");
   } catch (innerError) {
     // ignore error
@@ -13,6 +11,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Moved inside the config object correctly for Next 15/16
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -21,32 +20,32 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+    ],
+    localPatterns: [
+      {
+        pathname: '/**',
+        search: '',
+      },
+    ],
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-
   reactStrictMode: true,
-  images: {
-    domains: ['localhost'],
-  },
 }
 
 if (userConfig) {
-  // ESM imports will have a "default" property
   const config = userConfig.default || userConfig
-
   for (const key in config) {
-    if (
-      typeof nextConfig[key] === 'object' &&
-      !Array.isArray(nextConfig[key])
-    ) {
-      nextConfig[key] = {
-        ...nextConfig[key],
-        ...config[key],
-      }
+    if (typeof nextConfig[key] === 'object' && !Array.isArray(nextConfig[key])) {
+      nextConfig[key] = { ...nextConfig[key], ...config[key] }
     } else {
       nextConfig[key] = config[key]
     }
